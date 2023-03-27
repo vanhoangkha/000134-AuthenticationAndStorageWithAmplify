@@ -1,0 +1,71 @@
+[
+{
+	"uri": "/vi/3-authentication-and-storage/3-1-authenication-with-amplify/",
+	"title": "Authentication với Amplify",
+	"tags": [],
+	"description": "",
+	"content": " Chạy câu lệnh dưới đây tại thư mục gốc của ứng dụng mà bạn clone về để thêm authentication cho ứng dụng:  amplify add auth   Chọn theo các thông tin dưới đây:\nDo you want to use the default authentication and security configuration? Default configuration\nWarning: you will not be able to edit these selections.\nHow do you want users to be able to sign in? Username\nDo you want to configure advanced settings? No, I am done.\n  Chạy câu lệnh sau để cập nhật tài nguyên trên cloud:  amplify push Mở lại bảng điều khiển của CloudFormation để kiểm tra xem stack đã được tạo hay chưa.   Ấn vào id của UserPool để mở bảng điều khiển của Cognito User Pool  Chạy câu lệnh sau để bắt đầu với ứng dụng: npm start   Ấn Sign up để đăng ký một tài khoản mới.  Nhập thông tin người dùng:   Tên người dùng, ví dụ: admin Nhập email của bạn. Mật khẩu, ví dụ: Admin123 Ấn Sign up  Mở lại bảng điều khiển của Cognito User Pool, chọn tab User bạn sẽ thấy một người dùng đã được đăng ký nhưng chưa xác nhận  Mở mail của bạn để lấy mã xác thực đã được gửi tự động.  Nhập mã xác nhập vào ứng dụng rồi ấn Submit  Mở lại bảng điều khiển của Cognito User Pool, ấn biểu tượng Refresh bạn sẽ thấy ngừoi dùng đã được xác thực  Đăng nhập vào ứng dụng với tài khoản bạn vừa đăng ký.  Bạn đã đăng nhập thành công.  Chọn My Profile ở menu phía bên trái, sau đó ấn Update profile  Nhập mật khẩu cũ, mật khẩu mới để cập nhật mật khẩu. Sau đó ấn Update  Ấn OK  Ấn Logout để đăng xuất  Ấn Sign in để đăng nhập lại  Nhập thông tin tài khoản sau khi cập nhật để đăng nhập, sau đó ấn Sign in  Bạn đã đăng nhập thành công bằng thông tin mới.  "
+},
+{
+	"uri": "/vi/1-introduction/",
+	"title": "Giới Thiệu Amplify",
+	"tags": [],
+	"description": "",
+	"content": "Tổng quan Các thư viện Amplify open-source client cung cấp các use-case centric, opinionated, khai báo và giao diện dễ sử dụng trên các loại hoạt động khác nhau do đám mây cung cấp, cho phép các nhà phát triển web và di động dễ dàng tương tác với các phần phụ trợ của họ. Các thư viện này có thể được cung cấp bởi AWS cloud và cung cấp một mô hình pluggable có thể mở rộng để sử dụng các nhà cung cấp khác. Các thư viện có thể được sử dụng với cả các phụ trợ mới tạo bằng Amplify CLI và backend resource hiện có.\nAmplify mã nguồn mở cung cấp các sản phẩm sau để xây dựng các ứng dụng iOS, Android, Flutter, Web và React Native đầy đủ:\nAmplify CLI - Định cấu hình tất cả các dịch vụ cần thiết để cung cấp năng lượng cho chương trình phụ trợ của bạn thông qua giao diện dòng lệnh đơn giản. Amplify Libraries - Sử dụng thư viện case-centric client để tích hợp mã ứng dụng của bạn với phần phụ trợ bằng cách sử dụng giao diện khai báo. Amplify UI Components - Thư viện giao diện người dùng cho React, React Native, Angular, Vue và Flutter.\nAuthentication với Amplify Amplify sử dụng Amazon Cognito làm nhà cung cấp xác thực chính. Amazon Cognito là một dịch vụ thư mục người dùng mạnh mẽ xử lý đăng ký người dùng, xác thực, khôi phục tài khoản và các hoạt động khác. Trong hướng dẫn này, bạn sẽ tìm hiểu cách thêm xác thực vào ứng dụng của mình bằng Amazon Cognito và đăng nhập tên người dùng/mật khẩu.\nStorage với Amplify Mô-đun AWS Amplify Storage cung cấp một cơ chế đơn giản để quản lý nội dung người dùng cho ứng dụng của bạn trong các bộ chứa lưu trữ công khai, được bảo vệ hoặc riêng tư. Danh mục Lưu trữ đi kèm với hỗ trợ tích hợp cho Amazon S3.\n"
+},
+{
+	"uri": "/vi/",
+	"title": "Serverless - Sử dụng Amplify Authentication và Storage",
+	"tags": [],
+	"description": "",
+	"content": "Serverless - Sử dụng Amplify Authentication và Storage Tổng quan Trong bài lần trước, chúng ta đã biết cách tạo và sử dụng Lambda function tương tác với DynamoDB. Tiếp theo trong series này, chúng ta sẽ sử dụng thư viện Amplify để xác thực người dùng bằng Amazon Cognito, upload tệp lên S3 bucket.\nKiến trúc của ứng dụng chúng ta sẽ xây dựng:\nNội dung  Giới thiệu Chuẩn bị Xác thực và Lưu trữ Cấp độ truy cập Dọn dẹp tài nguyên  "
+},
+{
+	"uri": "/vi/2-preparation/",
+	"title": "Chuẩn Bị",
+	"tags": [],
+	"description": "",
+	"content": "Chúng ta thực hiện các bước dưới đây để chuẩn bị cho việc xác thực và lưu tệp với thư viện Amplify trong phần sau:\n Cài đặt Amplify CLI, chạy câu lệnh dưới đây:  npm install -g @aws-amplify/cli \rBạn phải cài đặt NodeJs trước khi cài đặt Amplify CLI\nBạn nên tạo một user và cấu hình một AWS profile với thông tin xác thực trên máy của bạn.\n\rChạy các câu lệnh dưới đây để clone ứng dụng về máy của bạn:  git clone https://github.com/AWS-First-Cloud-Journey/FCJ-DMS\rcd FCJ-DMS\rnpm install Để khởi tạo Amplify cho ứng dụng, bạn chạy câu lệnh dưới đây từ thư mục gốc của ứng dụng:  amplify init   Nhập theo các thông tin dưới đây:\n? Enter a name for the project fcjdms\nThe following configuration will be applied:\nProject information\n| Name: fcjdms\n| Environment: dev\n| Default editor: Visual Studio Code\n| App type: javascript\n| Javascript framework: react\n| Source Directory Path: src\n| Distribution Directory Path: build\n| Build Command: npm run-script build\n| Start Command: npm run-script start\n? Initialize the project with the above configuration? Yes\nUsing default provider awscloudformation\n? Select the authentication method you want to use: AWS profile\nFor more information on AWS Profiles, see:\nhttps://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html\n? Please choose the profile you want to use default\n? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) › No\n  Chạy câu lệnh dưới đây để cập nhật tài nguyên cloud: amplify push  Mở bảng điều khiển của CloudFormation Chọn Stacks ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab Resources bạn sẽ thấy các tài nguyên mà Amplify tạo  "
+},
+{
+	"uri": "/vi/3-authentication-and-storage/3-2-storage-with-amplify/",
+	"title": "Storage với Amplify",
+	"tags": [],
+	"description": "",
+	"content": "Sau khi bạn đã tạo tài khoản với Cognito User Pool thành công, chúng ta sẽ dùng tài khoản đó để upload file lên S3 bucket với Amplify trong phần này.\n  Ấn tổ hợp Ctrl+C trong terminal hoặc command line\n  Chạy câu lệnh dưới đây tại thư mục gốc của ứng dụng mà bạn clone về để thêm authentication cho ứng dụng:\n  amplify add storage   Chọn và nhập theo các thông tin dưới đây:\n? Please select from one of the below mentioned services: Content (Images, audio, video, etc.)\nProvide a friendly name for your resource that will be used to label this cateogry in the project: fcjdmsstore\nProvide bucket name: fcjdmsstore\nWho should have access: Auth users only\nWhat kind of access do you want for Authenticated user? Ấn tổ hợp Ctrl + A\nDo you want to add a Lambda Trigger for your S3 Bucket? no\n  Chạy câu lệnh sau để cập nhật tài nguyên trên cloud:  amplify push Mở lại bảng điều khiển của CloudFormation để kiểm tra xem stack đã được tạo hay chưa.   Ấn vào tên của bucket để mở bảng điều khiển của bucket đó  Chạy câu lệnh sau để bắt đầu với ứng dụng: npm start   Ấn Upload  Ấn Add files và chọn những tệp bạn muốn tải lên  Thêm tag cho các tệp hoặc có thể bỏ qua. Sau đó ấn Upload  Bạn đã tải lên thành công các tệp của mình  Bạn có thể gặp thông báo lỗi, ấn OK để bỏ qua vì chúng ta chưa thiết lập API cho ứng dụng.\n\rQuay lại với bảng điều khiển của S3 bucket, kiểm tra xem các file đã được tải lên hay chưa.  Vậy là bạn đã hoàn thành việc xác thực người dùng và tải tệp lên S3 với Amplify. Trong S3 bucket đã được tạo thư mục protected bởi vì ứng dụng của chúng ta chọn Access Level là protected. Để tìm hiểu thêm về Access Level, bạn hãy chuyển sang phần tiếp theo.\n"
+},
+{
+	"uri": "/vi/3-authentication-and-storage/",
+	"title": "Xác Thực Và Lưu Trữ",
+	"tags": [],
+	"description": "",
+	"content": "Đây là phần chính của workshop này, bạn sẽ thêm xác thực người dùng và storage với Amplify vào project.\nNội dung  Authentication với Amplify Storage với Amplify  "
+},
+{
+	"uri": "/vi/4-access-level/",
+	"title": "Cấp Độ Truy Cập",
+	"tags": [],
+	"description": "",
+	"content": "Khi tải tệp lên S3 bucket, chúng ta có 3 cấp độ truy cập là public, protected và private:\n Public: Tất cả người dùng ứng dụng của bạn có thể truy cập. Các tệp được lưu trữ dưới đường dẫn chung/trong bộ chứa S3 của bạn. Protected: Tất cả người dùng có thể đọc nhưng chỉ người dùng tạo mới có thể ghi. Các tệp được lưu trữ trong protected/{user_identity_id}/ trong đó user_identity_id tương ứng với ID nhận dạng Amazon Cognito duy nhất cho người dùng đó. Private: Chỉ có thể truy cập cho người dùng cá nhân. Các tệp được lưu trữ trong private/{user_identity_id}/ trong đó user_identity_id tương ứng với ID nhận dạng Amazon Cognito duy nhất cho người dùng đó.  Trong phần này chúng ta sẽ thay đổi quyền của người dùng để tải tệp lên S3.\n  Truy cập vào bảng điều khiển của Cognito\n  Chọn Federated Identities ở menu phía bên trái. Sau đó chọn fcjdms\u0026hellip;identitypool\u0026hellip;\n  Ấn Edit identity pool  Ghi lại tên của Authenticated role  Mở bảng điều khiển của IAM   Chọn Roles ở menu phía bên trái Nhập tên của Authenticated role và ấn vào role tìm thấy  Mở rộng các policy để xem quyền của user  Chọn policy Protected_policy_\u0026hellip;   Ấn nút Remove  Bạn có thể thấy quyền thêm, xoá và lấy object trong S3 bucket đối với thư mục identity_id trong thư mục protected\n\rNhập tên của policy và ấn Delete  Bạn đã xoá thành công.  Quay lại với ứng dụng, ấn Add files và chọn tệp bạn muốn tải lên. Sau đó ấn Upload  Màn hình vẫn báo thành công, nhưng bạn hãy xem lỗi ở chế độ Inspect | Console. Chúng ta đã nhận được lỗi Access Denied.  Thêm lại quyền cho người dùng.   Ấn Add permissions Chọn Create inline policy  Chọn service là S3  Tại mục Actions | Read, chọn quyền GetObject  Tại mục Actions | Write, chọn quyền PutObject và DeleteObject  Tại mục Resources, ấn Add ARN  Ấn List ARNs manually  Nhập ARN: arn:aws:s3:::fcjdmsstore101547-dev/protected/${cognito-identity.amazonaws.com:sub}/*   Ấn Add  Ấn Review policy  Nhập tên cho policy: Protected_policy. Sau đó ấn Create policy  Quay lại ứng dụng web, tải lại tệp mà bạn vừa thất bại   Ấn Add files, chọn tệp muốn tải Ấn Upload  Mở bảng điều khiển của S3 bucket xem tệp đã tải thành công hay chưa.  Chúng ta đã tìm hiểu về mức độ truy cập protected. Nếu bạn muốn thêm quyền cho các mức độ hay chỉnh sửa quyền nào thì có thể làm tương tự.\n"
+},
+{
+	"uri": "/vi/5-cleanup/",
+	"title": "Dọn Dẹp Tài Nguyên",
+	"tags": [],
+	"description": "",
+	"content": " Làm rỗng S3 bucket   Mở bảng điều khiển của S3 Chọn bucket fcjdmsstore\u0026hellip;-dev Ấn nút Empty Nhập permanently delete và ấn Empty  Chạy câu lệnh dưới đây  amplify delete "
+},
+{
+	"uri": "/vi/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/vi/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
