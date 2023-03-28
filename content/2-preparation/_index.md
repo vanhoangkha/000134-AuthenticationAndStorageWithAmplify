@@ -19,8 +19,8 @@ You should create a user and configure an AWS profile with credentials on your m
 
 2. Run the below commands to clone the application to your device:
 ```
-git clone https://github.com/AWS-First-Cloud-Journey/FCJ-DMS
-cd FCJ-DMS
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-DMS
+cd FCJ-Serverless-DMS
 npm install
 ```
 

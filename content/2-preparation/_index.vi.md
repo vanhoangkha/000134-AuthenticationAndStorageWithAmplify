@@ -19,8 +19,8 @@ Bạn nên tạo một user và cấu hình một AWS profile với thông tin x
 
 2. Chạy các câu lệnh dưới đây để clone ứng dụng về máy của bạn:
 ```
-git clone https://github.com/AWS-First-Cloud-Journey/FCJ-DMS
-cd FCJ-DMS
+git clone https://github.com/AWS-First-Cloud-Journey/FCJ-Serverless-DMS
+cd FCJ-Serverless-DMS
 npm install
 ```
 
