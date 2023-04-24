@@ -79,7 +79,7 @@ amplify push
 
 ![UpdateProfile](/images/3-1-authenication-with-amplify/3-1-authenication-with-amplify-14.png?featherlight=false&width=90pc)
 
-15. Ấn **Logout** để đăng xuất
+15. Ấn **Sign out** để đăng xuất
 
 ![UpdateProfile](/images/3-1-authenication-with-amplify/3-1-authenication-with-amplify-15.png?featherlight=false&width=90pc)
 

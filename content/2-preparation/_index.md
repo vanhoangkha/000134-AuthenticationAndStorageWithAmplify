@@ -24,7 +24,11 @@ cd FCJ-Serverless-DMS
 npm install
 ```
 
-3. To initialize Amplify for your application, run the following command from the application's root directory:
+3. Open the project and open **src/component/Home/Upload.js** file. Comment the block codes that call API to interact with DynamoDB
+
+![AmplifyInit](/images/2-preparation/2-preparation-1.png?featherlight=false&width=90pc)
+
+4. To initialize Amplify for your application, run the following command from the application's root directory:
 ```
 amplify init
 ```
@@ -47,7 +51,7 @@ amplify init
 
     ? Initialize the project with the above configuration? `Yes`\
     Using default provider  awscloudformation\
-    ? Select the authentication method you want to use: `AWS profile`
+    ? Select the authentication method you want to use: *AWS profile*
 
     For more information on AWS Profiles, see:\
     https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
@@ -55,13 +59,13 @@ amplify init
     ? Please choose the profile you want to use default\
     ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) › `No`
 
-6. Run the command below to update cloud resources:
-`amplify push`
+5. Run the command `amplify push` to update cloud resources:
+
 
 ![AmplifyInit](/images/2-preparation/2-preparation-1.png?featherlight=false&width=90pc)
 
-4. Open [CloudFormation console](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
+6. Open [CloudFormation console](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
 
-5. Select **Stacks** on the left menu, you will see the newly created stack. Click the **Resources** tab and you will see the resources that Amplify creates
+7. Select **Stacks** on the left menu, you will see the newly created stack. Click the **Resources** tab and you will see the resources that Amplify creates
 
 ![AmplifyInit](/images/2-preparation/2-preparation-2.png?featherlight=false&width=90pc)

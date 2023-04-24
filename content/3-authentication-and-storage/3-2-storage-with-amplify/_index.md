@@ -9,7 +9,7 @@ After you have successfully created an account with Cognito User Pool, we will u
 
 1. Press the combination **Ctrl+C** in terminal or command line
 
-2. Run the below command at the root of the application you cloned to add authentication to the application:
+2. Run the below command at the root of the application you cloned to add storage to the application:
 ```
 amplify add storage
 ```

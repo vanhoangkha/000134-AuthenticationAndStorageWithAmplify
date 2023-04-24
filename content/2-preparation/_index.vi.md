@@ -24,7 +24,11 @@ cd FCJ-Serverless-DMS
 npm install
 ```
 
-3. Để khởi tạo Amplify cho ứng dụng, bạn chạy câu lệnh dưới đây từ thư mục gốc của ứng dụng: 
+3. Mở project và mở tệp **src/component/Home/Upload.js**. Comment đoạn code gọi API để tương tác với DynamoDB
+
+![AmplifyInit](/images/2-preparation/2-preparation-1.png?featherlight=false&width=90pc)
+
+4. Để khởi tạo Amplify cho ứng dụng, bạn chạy câu lệnh dưới đây từ thư mục gốc của ứng dụng: 
 ```
 amplify init
 ```
@@ -47,7 +51,7 @@ amplify init
 
     ? Initialize the project with the above configuration? `Yes`\
     Using default provider  awscloudformation\
-    ? Select the authentication method you want to use: `AWS profile`
+    ? Select the authentication method you want to use: *AWS profile*
 
     For more information on AWS Profiles, see:\
     https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
@@ -55,12 +59,12 @@ amplify init
     ? Please choose the profile you want to use default\
     ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) › `No`
 
-6. Chạy câu lệnh dưới đây để cập nhật tài nguyên cloud:
-`amplify push`
+5. Chạy câu lệnh `amplify push` để cập nhật tài nguyên cloud:
 
-![AmplifyInit](/images/2-preparation/2-preparation-1.png?featherlight=false&width=90pc)
-
-4. Mở bảng điều khiển của [CloudFormation](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
-5. Chọn **Stacks** ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab **Resources** bạn sẽ thấy các tài nguyên mà Amplify tạo
 
 ![AmplifyInit](/images/2-preparation/2-preparation-2.png?featherlight=false&width=90pc)
+
+6. Mở bảng điều khiển của [CloudFormation](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
+7. Chọn **Stacks** ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab **Resources** bạn sẽ thấy các tài nguyên mà Amplify tạo
+
+![AmplifyInit](/images/2-preparation/2-preparation-3.png?featherlight=false&width=90pc)

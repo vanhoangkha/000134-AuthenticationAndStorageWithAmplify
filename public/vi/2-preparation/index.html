@@ -12,21 +12,21 @@
     <title>Chuẩn Bị :: Serverless - Using Amplify Authentication and Storage for Serverless Applications</title>
 
     
-    <link href="/css/nucleus.css?1679974130" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1679974130" rel="stylesheet">
-    <link href="/css/hybrid.css?1679974130" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1679974130" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1679974130" rel="stylesheet">
-    <link href="/css/auto-complete.css?1679974130" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1679974130" rel="stylesheet">
-    <link href="/css/theme.css?1679974130" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1679974130" rel="stylesheet">
+    <link href="/css/nucleus.css?1682329891" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1682329891" rel="stylesheet">
+    <link href="/css/hybrid.css?1682329891" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1682329891" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1682329891" rel="stylesheet">
+    <link href="/css/auto-complete.css?1682329891" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1682329891" rel="stylesheet">
+    <link href="/css/theme.css?1682329891" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1682329891" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1679974130" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1682329891" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1679974130"></script>
+    <script src="/js/jquery-3.3.1.min.js?1682329891"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1679974130"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1679974130"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1682329891"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1682329891"></script>
 <script type="text/javascript">
     
         var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1679974130"></script>
+<script type="text/javascript" src="/js/search.js?1682329891"></script>
 
     
   </div>
@@ -460,6 +460,10 @@ Bạn nên tạo một user và cấu hình một AWS profile với thông tin x
 cd FCJ-Serverless-DMS
 npm install
 </code></pre><ol start="3">
+<li>Mở project và mở tệp <strong>src/component/Home/Upload.js</strong>. Comment đoạn code gọi API để tương tác với DynamoDB</li>
+</ol>
+<p><img src="/images/2-preparation/2-preparation-1.png?featherlight=false&amp;width=90pc" alt="AmplifyInit"></p>
+<ol start="4">
 <li>Để khởi tạo Amplify cho ứng dụng, bạn chạy câu lệnh dưới đây từ thư mục gốc của ứng dụng:</li>
 </ol>
 <pre tabindex="0"><code>amplify init
@@ -480,23 +484,22 @@ The following configuration will be applied:</p>
 | Start Command: npm run-script start</p>
 <p>? Initialize the project with the above configuration? <code>Yes</code><br>
 Using default provider  awscloudformation<br>
-? Select the authentication method you want to use: <code>AWS profile</code></p>
+? Select the authentication method you want to use: <em>AWS profile</em></p>
 <p>For more information on AWS Profiles, see:<br>
 <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html">https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html</a></p>
 <p>? Please choose the profile you want to use default<br>
 ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) › <code>No</code></p>
 </li>
 </ul>
-<ol start="6">
-<li>Chạy câu lệnh dưới đây để cập nhật tài nguyên cloud:
-<code>amplify push</code></li>
+<ol start="5">
+<li>Chạy câu lệnh <code>amplify push</code> để cập nhật tài nguyên cloud:</li>
 </ol>
-<p><img src="/images/2-preparation/2-preparation-1.png?featherlight=false&amp;width=90pc" alt="AmplifyInit"></p>
-<ol start="4">
+<p><img src="/images/2-preparation/2-preparation-2.png?featherlight=false&amp;width=90pc" alt="AmplifyInit"></p>
+<ol start="6">
 <li>Mở bảng điều khiển của <a href="https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/">CloudFormation</a></li>
 <li>Chọn <strong>Stacks</strong> ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab <strong>Resources</strong> bạn sẽ thấy các tài nguyên mà Amplify tạo</li>
 </ol>
-<p><img src="/images/2-preparation/2-preparation-2.png?featherlight=false&amp;width=90pc" alt="AmplifyInit"></p>
+<p><img src="/images/2-preparation/2-preparation-3.png?featherlight=false&amp;width=90pc" alt="AmplifyInit"></p>
 
 
 
@@ -675,19 +678,19 @@ Using default provider  awscloudformation<br>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1679974130"></script>
-    <script src="/js/perfect-scrollbar.min.js?1679974130"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1679974130"></script>
-    <script src="/js/jquery.sticky.js?1679974130"></script>
-    <script src="/js/featherlight.min.js?1679974130"></script>
-    <script src="/js/highlight.pack.js?1679974130"></script>
+    <script src="/js/clipboard.min.js?1682329891"></script>
+    <script src="/js/perfect-scrollbar.min.js?1682329891"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1682329891"></script>
+    <script src="/js/jquery.sticky.js?1682329891"></script>
+    <script src="/js/featherlight.min.js?1682329891"></script>
+    <script src="/js/highlight.pack.js?1682329891"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1679974130"></script>
-    <script src="/js/learn.js?1679974130"></script>
-    <script src="/js/hugo-learn.js?1679974130"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1682329891"></script>
+    <script src="/js/learn.js?1682329891"></script>
+    <script src="/js/hugo-learn.js?1682329891"></script>
 
-    <link href="/mermaid/mermaid.css?1679974130" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1679974130"></script>
+    <link href="/mermaid/mermaid.css?1682329891" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1682329891"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

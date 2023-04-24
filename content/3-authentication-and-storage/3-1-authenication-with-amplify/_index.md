@@ -79,7 +79,7 @@ amplify push
 
 ![UpdateProfile](/images/3-1-authenication-with-amplify/3-1-authenication-with-amplify-14.png?featherlight=false&width=90pc)
 
-15. Click **Logout** to log out
+15. Click **Sign out** to log out
 
 ![UpdateProfile](/images/3-1-authenication-with-amplify/3-1-authenication-with-amplify-15.png?featherlight=false&width=90pc)
 

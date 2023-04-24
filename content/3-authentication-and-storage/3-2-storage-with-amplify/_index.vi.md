@@ -9,7 +9,7 @@ Sau khi bạn đã tạo tài khoản với Cognito User Pool thành công, chú
 
 1. Ấn tổ hợp **Ctrl+C** trong terminal hoặc command line
 
-2. Chạy câu lệnh dưới đây tại thư mục gốc của ứng dụng mà bạn clone về để thêm authentication cho ứng dụng:
+2. Chạy câu lệnh dưới đây tại thư mục gốc của ứng dụng mà bạn clone về để thêm storage cho ứng dụng:
 ```
 amplify add storage
 ```

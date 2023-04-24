@@ -37,14 +37,14 @@ In this section we will change the user permission to upload files to S3.
 
 ![Cognito](/images/4-access-level/4-access-level-5.png?featherlight=false&width=90pc)
 
-7. Select **Protected_policy_...** policy
-- Click **Remove**
-
-![Cognito](/images/4-access-level/4-access-level-6.png?featherlight=false&width=90pc)
-
 {{% notice note %}}
 You can see the permission to add, remove and get objects in the S3 bucket for the *identity_id* folder in the *protected* folder
 {{% /notice %}}
+
+7. Select **Protected_policy_...** policy
+    - Click **Remove**
+
+![Cognito](/images/4-access-level/4-access-level-6.png?featherlight=false&width=90pc)
 
 8. Enter policy name and click **Delete**
 

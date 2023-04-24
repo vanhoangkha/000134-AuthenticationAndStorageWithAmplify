@@ -37,14 +37,14 @@ Trong phần này chúng ta sẽ thay đổi quyền của người dùng để 
 
 ![Cognito](/images/4-access-level/4-access-level-5.png?featherlight=false&width=90pc)
 
-7. Chọn policy **Protected_policy_...**
-- Ấn nút **Remove**
-
-![Cognito](/images/4-access-level/4-access-level-6.png?featherlight=false&width=90pc)
-
 {{% notice note %}}
 Bạn có thể thấy quyền thêm, xoá và lấy object trong S3 bucket đối với thư mục *identity_id* trong thư mục *protected*
 {{% /notice %}}
+
+7. Chọn policy **Protected_policy_...**
+    - Ấn nút **Remove**
+
+![Cognito](/images/4-access-level/4-access-level-6.png?featherlight=false&width=90pc)
 
 8. Nhập tên của policy và ấn **Delete**
 
