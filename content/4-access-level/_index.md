@@ -46,6 +46,8 @@ You can see the permission to add, remove and get objects in the S3 bucket for t
 
 ![Cognito](/images/4-access-level/4-access-level-6.png?featherlight=false&width=90pc)
 
+We will remove the access level permission **protected** because the application is using that level.
+
 8. Enter policy name and click **Delete**
 
 ![Cognito](/images/4-access-level/4-access-level-7.png?featherlight=false&width=90pc)

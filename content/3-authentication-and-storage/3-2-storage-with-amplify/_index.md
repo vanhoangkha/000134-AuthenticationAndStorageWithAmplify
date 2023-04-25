@@ -53,10 +53,6 @@ amplify push
 
 ![UploadFile](/images/3-2-storage-with-amplify/3-2-storage-with-amplify-7.png?featherlight=false&width=90pc)
 
-{{% notice note %}}
-You may get an error message, click OK to ignore it because we have not set up the API for the application.
-{{% /notice %}}
-
 9. Back to the S3 bucket dashboard, check if the files have been uploaded.
 
 ![UploadFile](/images/3-2-storage-with-amplify/3-2-storage-with-amplify-8.png?featherlight=false&width=90pc)

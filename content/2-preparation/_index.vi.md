@@ -56,15 +56,12 @@ amplify init
     For more information on AWS Profiles, see:\
     https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
 
-    ? Please choose the profile you want to use default\
+    ? Please choose the profile you want to use *default*\
     ? Help improve Amplify CLI by sharing non sensitive configurations on failures (y/N) › `No`
-
-5. Chạy câu lệnh `amplify push` để cập nhật tài nguyên cloud:
-
 
 ![AmplifyInit](/images/2-preparation/2-preparation-2.png?featherlight=false&width=90pc)
 
-6. Mở bảng điều khiển của [CloudFormation](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
-7. Chọn **Stacks** ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab **Resources** bạn sẽ thấy các tài nguyên mà Amplify tạo
+5. Mở bảng điều khiển của [CloudFormation](https://ap-southeast-1.console.aws.amazon.com/cloudformation/home?region=ap-southeast-1#/)
+6. Chọn **Stacks** ở menu phía bên trái, bạn sẽ thấy stack mới được tạo. Ấn tab **Resources** bạn sẽ thấy các tài nguyên mà Amplify tạo
 
 ![AmplifyInit](/images/2-preparation/2-preparation-3.png?featherlight=false&width=90pc)

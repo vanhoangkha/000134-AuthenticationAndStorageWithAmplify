@@ -53,10 +53,6 @@ amplify push
 
 ![UploadFile](/images/3-2-storage-with-amplify/3-2-storage-with-amplify-7.png?featherlight=false&width=90pc)
 
-{{% notice note %}}
-Bạn có thể gặp thông báo lỗi, ấn OK để bỏ qua vì chúng ta chưa thiết lập API cho ứng dụng.
-{{% /notice %}}
-
 9. Quay lại với bảng điều khiển của S3 bucket, kiểm tra xem các file đã được tải lên hay chưa.
 
 ![UploadFile](/images/3-2-storage-with-amplify/3-2-storage-with-amplify-8.png?featherlight=false&width=90pc)
