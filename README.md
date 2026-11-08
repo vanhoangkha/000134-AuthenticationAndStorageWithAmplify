@@ -1,4 +1,4 @@
-# 🔐 Authentication & Storage with Amplify
+# Authentication & Storage with Amplify
 
 User auth and file storage using AWS Amplify.
 
@@ -8,7 +8,7 @@ This is a hands-on workshop from the **AWS First Cloud Journey** series.
 
 ## Workshop
 
-📖 **[Start the workshop](https://vanhoangkha.github.io/000134-AuthenticationAndStorageWithAmplify/)**
+**[Start the workshop](https://vanhoangkha.github.io/000134-AuthenticationAndStorageWithAmplify/)**
 
 ## Prerequisites
 
